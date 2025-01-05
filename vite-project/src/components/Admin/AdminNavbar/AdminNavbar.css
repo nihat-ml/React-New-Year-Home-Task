@@ -1,0 +1,49 @@
+
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .admin-navbar-logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .admin-navbar-logo .logo-icon {
+    font-size: 30px;
+  }
+  
+  .admin-navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .admin-navbar-links .admin-navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .admin-navbar-links .admin-navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 768px) {
+    .admin-navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .admin-navbar-logo h1 {
+      font-size: 20px;
+    }
+  }
+  

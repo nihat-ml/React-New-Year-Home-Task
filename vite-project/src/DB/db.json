@@ -1,0 +1,125 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Ruby Red",
+        "color": "Red",
+        "fragrance": "Sweet",
+        "height": "Tall",
+        "price": 15.99,
+        "origin": "Ecuador",
+        "bloom_size": "Large",
+        "petal_count": 40,
+        "image": "https://www.englishroses.co.uk/wp-content/uploads/2024/09/Happy-Ruby-Wedding-Rose-Single-Bloom-Main-Image.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Pearl White",
+        "color": "White",
+        "fragrance": "Mild",
+        "height": "Medium",
+        "price": 12.99,
+        "origin": "Netherlands",
+        "bloom_size": "Medium",
+        "petal_count": 30,
+        "image": "https://fiftyflowers.com/cdn/shop/products/Pearl-Touch-Pure-White-1-350_73868114.jpg?v=1683165928&width=800"
+      },
+      {
+        "id": 3,
+        "name": "Golden Glow",
+        "color": "Yellow",
+        "fragrance": "Fruity",
+        "height": "Short",
+        "price": 10.99,
+        "origin": "Kenya",
+        "bloom_size": "Small",
+        "petal_count": 25,
+        "image": "https://images.stockcake.com/public/1/a/5/1a5011a6-9e5e-4afe-9572-e2b0f9e4fa97_large/tender-rose-touch-stockcake.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Blush Pink",
+        "color": "Pink",
+        "fragrance": "Floral",
+        "height": "Medium",
+        "price": 13.99,
+        "origin": "Colombia",
+        "bloom_size": "Medium",
+        "petal_count": 35,
+        "image": "https://wardahapp.com/cdn/shop/products/SingleBlushRose.jpg?v=1671379732"
+      },
+      {
+        "id": 5,
+        "name": "Amber Flame",
+        "color": "Orange",
+        "fragrance": "Vibrant",
+        "height": "Tall",
+        "price": 14.99,
+        "origin": "South Africa",
+        "bloom_size": "Large",
+        "petal_count": 45,
+        "image": "https://files.idyllic.app/files/static/2364748"
+      },
+      {
+        "id": 6,
+        "name": "Violet Mist",
+        "color": "Purple",
+        "fragrance": "Exotic",
+        "height": "Short",
+        "price": 11.99,
+        "origin": "India",
+        "bloom_size": "Small",
+        "petal_count": 20,
+        "image": "https://i5.walmartimages.com/asr/2ec396a6-1543-4d98-88d5-e6260397ba08.8239dea3fa969dfc0e0218d0ce9eeb97.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+      },
+      {
+        "id": 7,
+        "name": "Ivory Dream",
+        "color": "Cream",
+        "fragrance": "Soft",
+        "height": "Medium",
+        "price": 12.49,
+        "origin": "France",
+        "bloom_size": "Medium",
+        "petal_count": 32,
+        "image": "https://www.farmflorist.com/wp-content/uploads/2024/03/Ivory-Lace-Dream.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Crimson Velvet",
+        "color": "Dark Red",
+        "fragrance": "Spicy",
+        "height": "Tall",
+        "price": 16.49,
+        "origin": "Italy",
+        "bloom_size": "Large",
+        "petal_count": 50,
+        "image": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/red-velvet-types-of-red-roses.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Lavender Bliss",
+        "color": "Lavender",
+        "fragrance": "Fresh",
+        "height": "Short",
+        "price": 10.49,
+        "origin": "Japan",
+        "bloom_size": "Small",
+        "petal_count": 28,
+        "image": "https://dailyflowers.nl/cdn/shop/files/IMG_2530-scaled.jpg?v=1733316098&width=2560"
+      },
+      {
+        "id": 10,
+        "name": "Azure Elegance",
+        "color": "Blue",
+        "fragrance": "Unique",
+        "height": "Medium",
+        "price": 18.99,
+        "origin": "Germany",
+        "bloom_size": "Medium",
+        "petal_count": 37,
+        "image": "https://pngland.com/wp-content/uploads/2024/08/Rose-Midnight-Sapphire.jpg"
+      }
+    ]
+  }
+  

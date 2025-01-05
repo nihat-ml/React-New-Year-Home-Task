@@ -1,0 +1,102 @@
+.admin-products-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    width: 300px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .search-bar input:focus {
+    border-color: #4CAF50;
+  }
+  
+  .sort-btn {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .sort-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .admin-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  .admin-products-table th,
+  .admin-products-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-products-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .admin-products-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .details-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-btn {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .admin-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  

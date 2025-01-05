@@ -1,0 +1,147 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+  }
+  
+  
+  .footer-top {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .logo-icon {
+    font-size: 24px;
+    color: #ff69b4; 
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Footer alt kısmı */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer-section form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .footer-section input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .footer-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .footer-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer-section address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom span {
+    color: red;
+  }
+  

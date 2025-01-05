@@ -1,0 +1,58 @@
+.favorites-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.favorite-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.favorite-details {
+  padding: 10px;
+}
+
+.favorite-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.favorite-price {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.favorite-delete-btn {
+  background-color: transparent;
+  color: #ff4d4f;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.favorite-delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.favorite-delete-btn svg {
+  margin-right: 5px;
+}
