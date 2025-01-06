@@ -41,7 +41,8 @@ const ROUTES = [
     {
         path: "/admin",
         element: <AdminRoot/>,
-        children: [{
+        children: [
+        {
             path: "",
             element: <DashBoard/>
 
@@ -51,7 +52,7 @@ const ROUTES = [
             element: <AdminProducts/>
         },
         {
-            path: "adminproductsdetail",
+            path: "adminproducts/:id",
             element: <AdminProductDetail/>
         },
         {
@@ -59,7 +60,7 @@ const ROUTES = [
             element:<AddProduct/>
         },
         {
-            path:"editproduct",
+            path:"editproduct/:id",
             element: <EditProduct/>
         }
         ]

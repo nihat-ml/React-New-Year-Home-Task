@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import './AdminProducts.css'; // CSS stilini əlavə et
+import './AdminProducts.css';
 
 function AdminProducts() {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
-  // Məhsulları əldə etmək
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch('http://localhost:5000/products');
@@ -17,7 +17,6 @@ function AdminProducts() {
     fetchProducts();
   }, []);
 
-  // Məhsul silmə funksiyası
   const handleDelete = (id) => {
     Swal.fire({
       title: 'Əminsiniz?',
@@ -27,41 +26,30 @@ function AdminProducts() {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Bəli, sil!',
-      cancelButtonText: 'Ləğv et'
+      cancelButtonText: 'Ləğv et',
     }).then((result) => {
       if (result.isConfirmed) {
-        // API-ya silmə sorğusu göndəririk
         fetch(`http://localhost:5000/products/${id}`, {
           method: 'DELETE',
         })
-        .then(response => {
-          if (response.ok) {
-            // Məhsul API-dan silindiyi zaman, state-i yeniləyirik
-            setProducts(products.filter(product => product.id !== id));
+          .then((response) => {
+            if (response.ok) {
+              setProducts(products.filter((product) => product.id !== id));
+              Swal.fire('Silindi!', 'Məhsul uğurla silindi.', 'success');
+            } else {
+              return response.text().then((text) => {
+                Swal.fire('Xəta!', `Silinərkən xəta baş verdi: ${text}`, 'error');
+              });
+            }
+          })
+          .catch((error) => {
+            console.error('Error deleting product:', error);
             Swal.fire(
-              'Silindi!',
-              'Məhsul uğurla silindi.',
-              'success'
+              'Xəta!',
+              'Məhsul silinərkən server ilə əlaqə qurulmadı.',
+              'error'
             );
-          } else {
-            // Əgər status kodu 200-dən fərqli olarsa, xəta mesajını göstəririk
-            return response.text().then(text => {
-              Swal.fire(
-                'Xəta!',
-                `Silinərkən xəta baş verdi: ${text}`,
-                'error'
-              );
-            });
-          }
-        })
-        .catch(error => {
-          console.error('Error deleting product:', error);
-          Swal.fire(
-            'Xəta!',
-            'Məhsul silinərkən server ilə əlaqə qurulmadı.',
-            'error'
-          );
-        });
+          });
       }
     });
   };
@@ -69,6 +57,12 @@ function AdminProducts() {
   return (
     <div className="admin-products-container">
       <h1>Admin Products</h1>
+      <button
+        className="btn add-btn"
+        onClick={() => navigate('/addproduct')}
+      >
+        Add Product
+      </button>
       <table className="admin-products-table">
         <thead>
           <tr>
@@ -78,14 +72,23 @@ function AdminProducts() {
           </tr>
         </thead>
         <tbody>
-          {products.map(product => (
+          {products.map((product) => (
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>${product.price}</td>
               <td className="actions">
-                <Link to={`/product/${product.id}`} className="btn details-btn">Details</Link>
-                <Link to={`/edit/${product.id}`} className="btn edit-btn">Edit</Link>
-                <button className="btn delete-btn" onClick={() => handleDelete(product.id)}>Delete</button>
+                <Link to={`/home/${product.id}`} className="btn details-btn">
+                  Details
+                </Link>
+                <NavLink to={`editproduct/${product.id}`} className="btn edit-btn">
+                  Edit
+                </NavLink>
+                <button
+                  className="btn delete-btn"
+                  onClick={() => handleDelete(product.id)}
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

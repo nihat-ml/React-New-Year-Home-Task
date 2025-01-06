@@ -47,7 +47,7 @@ function ProductCard({ product }) {
         <div className="button-group">
           <button 
             className="product-btn details-btn"
-            onClick={() => navigate(`/product/${product.id}`)}
+            onClick={() => navigate(`/home/${product.id}`)}
           >
             <FaInfoCircle size={20} /> Details
           </button>
