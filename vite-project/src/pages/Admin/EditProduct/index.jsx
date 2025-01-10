@@ -73,7 +73,7 @@ function EditProduct() {
       .then((response) => {
         if (response.ok) {
           Swal.fire('Uğurlu', 'Məhsul uğurla redaktə edildi.', 'success');
-          navigate('/adminproducts'); 
+          navigate('/admin/adminproducts'); 
         } else {
           Swal.fire('Xəta', 'Redaktə əməliyyatı uğursuz oldu.', 'error');
         }

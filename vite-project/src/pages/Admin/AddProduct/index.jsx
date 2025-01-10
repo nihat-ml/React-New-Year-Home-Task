@@ -43,7 +43,7 @@ function AddProduct() {
       .post('http://localhost:5000/products', values)
       .then((response) => {
         Swal.fire('Uğurlu', 'Məhsul uğurla əlavə edildi.', 'success');
-        navigate('/adminproducts');
+        navigate('/admin/adminproducts');
       })
       .catch((error) => {
         console.error('Error adding product:', error);

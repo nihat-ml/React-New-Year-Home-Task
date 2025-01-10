@@ -59,7 +59,7 @@ function AdminProducts() {
       <h1>Admin Products</h1>
       <button
         className="btn add-btn"
-        onClick={() => navigate('/addproduct')}
+        onClick={() => navigate('/admin/addproduct')}
       >
         Add Product
       </button>
@@ -80,7 +80,7 @@ function AdminProducts() {
                 <Link to={`/home/${product.id}`} className="btn details-btn">
                   Details
                 </Link>
-                <NavLink to={`editproduct/${product.id}`} className="btn edit-btn">
+                <NavLink to={`/admin/editproduct/${product.id}`} className="btn edit-btn">
                   Edit
                 </NavLink>
                 <button

@@ -1,20 +1,8 @@
 {
   "products": [
     {
-      "name": "Golden Glow",
-      "price": 16.99,
-      "color": "Yellow",
-      "fragrance": "Fruity",
-      "height": "Short",
-      "origin": "Kenya",
-      "bloom_size": "Small",
-      "petal_count": 25,
-      "image": "https://images.stockcake.com/public/1/a/5/1a5011a6-9e5e-4afe-9572-e2b0f9e4fa97_large/tender-rose-touch-stockcake.jpg",
-      "id": "3"
-    },
-    {
       "name": "Blush Pink",
-      "price": 16.99,
+      "price": 18.99,
       "color": "Pink",
       "fragrance": "Floral",
       "height": "Medium",
@@ -82,6 +70,30 @@
       "origin": "Colombia",
       "bloom_size": "Small",
       "petal_count": 16,
+      "image": "https://images.stockcake.com/public/1/a/5/1a5011a6-9e5e-4afe-9572-e2b0f9e4fa97_large/tender-rose-touch-stockcake.jpg"
+    },
+    {
+      "id": "67b3",
+      "name": "Pearl White",
+      "price": 13,
+      "color": "Yellow",
+      "fragrance": "Fruity",
+      "height": "Short",
+      "origin": "Kenya",
+      "bloom_size": "Medium",
+      "petal_count": 19,
+      "image": "https://images.stockcake.com/public/1/a/5/1a5011a6-9e5e-4afe-9572-e2b0f9e4fa97_large/tender-rose-touch-stockcake.jpg"
+    },
+    {
+      "id": "517b",
+      "name": "Golden Glow",
+      "price": 16,
+      "color": "Pink",
+      "fragrance": "Floral",
+      "height": "Short",
+      "origin": "Colombia",
+      "bloom_size": "Medium",
+      "petal_count": 32,
       "image": "https://images.stockcake.com/public/1/a/5/1a5011a6-9e5e-4afe-9572-e2b0f9e4fa97_large/tender-rose-touch-stockcake.jpg"
     }
   ]
